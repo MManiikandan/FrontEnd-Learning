@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+        .box p span{
+            font-weight: bold;
+            color: blue;
+        }
+        .box>p{
+             color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias
+        quia cum nisi impedit earum ducimus nesciunt. Aliquid amet veritatis
+        iste, distinctio at molestiae quos blanditiis labore, ex natus sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias
+        quia cum nisi impedit <span>Joes</span>earum ducimus nesciunt. Aliquid amet veritatis
+        iste, distinctio at molestiae quos blanditiis labore, ex natus sapiente?
+      </p>
+      <div class="inner-box">
+        <p>
+        Outer Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias
+        quia cum nisi impedit earum ducimus nesciunt. Aliquid amet veritatis
+        iste, distinctio at molestiae quos blanditiis labore, ex natus sapiente?
+      </p>
+      </div>
+    </div>
+    <p>
+        Outer Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias
+        quia cum nisi impedit earum ducimus nesciunt. Aliquid amet veritatis
+        iste, distinctio at molestiae quos blanditiis labore, ex natus sapiente?
+      </p>
+    <!-- Combinators Selectors
+      1.Descendant( )
+      2.Direct Child(>)
+      3.Adjacent Siblings(+)
+      4.General Siblings(~)     
+    -->
+  </body>
+</html>

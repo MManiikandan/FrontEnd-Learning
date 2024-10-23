@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSSFiles/03_FormDesign.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <form action="#" class="form" autocomplete="off">
+        <h3>Application Form</h3>
+        <p>please complete the following application form details</p>
+        <div class="input-flex">
+          <div>
+            <label for="firstName" class="form-label">FirstName</label>
+            <input
+              type="text"
+              id="firstName"
+              class="form-input"
+              placeholder="Your first name"
+            />
+          </div>
+          <div>
+            <label for="lastName" class="form-label">LastName</label>
+            <input
+              type="text"
+              id="lastName"
+              class="form-input"
+              placeholder="Your first name"
+            />
+          </div>
+        </div>
+        <div class="input-flex">
+          <div>
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="text"
+              id="email"
+              class="form-input"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="Gender" class="form-label">Gender</label>
+            <select name="" id="Gender" class="form-input">
+              <option value="male">Male</option>
+              <option value="feMale">Female</option>
+              <option value="others">others</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-wrap">
+          <label for="Phone" class="form-label">Phone</label>
+          <div class="mb-3">
+            <input
+              type="number"
+              placeholder="country code"
+              class="form-input w-30"
+              id="country"
+            />
+            <input type="text" placeholder="phone number" class="form-input" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="position" class="form-label">Applying for position</label>
+          <input type="text" class="form-input" />
+        </div>
+        <div class="mb-3">
+          <label for="startDate" class="form-label">when can you start</label>
+          <input type="date" class="form-input" />
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <input type="txt" class="form-input mb-3" id="address" />
+        </div>
+        <div class="mb-3">
+          <label for="cover" class="form-label">Cover letter</label>
+          <textarea name="" id="cover" rows="6" class="form-input"></textarea>
+        </div>
+
+        <div class="form-file-flex mb-3">
+          <label for="upload" class="form-label">Upload Resume</label>
+          <input type="file" name="" id="upload" class="form-file" />
+        </div>
+        <button class="btn">Aplly now</button>
+      </form>
+    </div>
+    <script src="JavaScript/03_script.js"></script>
+  </body>
+</html>

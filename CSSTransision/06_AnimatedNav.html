@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+        padding: 0px;
+        border: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 50px;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #34495e;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+      }
+      .logo {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+      }
+      .header button {
+        width: 50px;
+        flex-shrink: 0;
+        font-size: 30px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+      }
+      .links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100vh;
+        width: 250px;
+        background-color: #fff;
+      }
+      .link {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 14px;
+        color: #333;
+      }
+      .link.active,
+      .link:hover {
+        color: #34495e;
+        background-color: #eee;
+        font-weight: bold;
+      }
+      .links {
+        transform: translate(-250px);
+        transition: 0.5px;
+      }
+      .contant {
+        padding: 10px;
+      }
+
+      .open .links {
+        transform: translate(0);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+      .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(2px);
+        visibility: hidden;
+        opacity: 0px;
+        transition: 0.3px;
+      }
+      .open .nav-overlay {
+        opacity: 1px;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">Tutor joes</div>
+      <button class="header-btn" id="btnNav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    <div class="side-nav">
+      <div class="links">
+        <a href="#1" class="link active">Home</a>
+        <a href="#2" class="link">About</a>
+        <a href="#3" class="link">Service</a>
+        <a href="#4" class="link">Download</a>
+      </div>
+      <div class="nav-overlay"></div>
+    </div>
+    <div class="contant">
+      <h1>Page title</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing et. Dignissimos
+        molestiae praesentium laudantium quam. Architecto bero vitae maiores
+        sed, necessitatibus esse consequatur expcabo possimus atque beatae eum,
+        temporibus modi vel labore consequuntur, cum nemo unde perferendis!
+        Voluptatem dolorem moltia consequatur cumque est quod cum perferendis
+        nesciunt sint nulla repudiandae, tenetur saepe unde aquam eos. A quas
+        beatae assumenda dolore aquid totam, repudiandae consequatur consectetur
+        cum modi praesentium recusandae saepe ipsam quisquam facere est dolores
+        temporibus molestiae maxime natus veritatis doloremque doloribus cumque
+        delectus. Doloribus sint aquid iusto soluta! Amet, nam. Voluptatem, iure
+        aquid? Est aperiam asperiores molestiae aspernatur, voluptate nemo,
+        placeat beatae ratione et itaque quasi ducimus odit eos atque corrupti
+        non tempora. Numquam atque totam eius accusantium, nostrum porro
+        corporis repellendus doloribus voluptatibus aut! Eveniet facis ex
+        voluptatem omnis consectetur dolore quaerat quibusdam optio. Ullam eaque
+        repudiandae perspiciatis, simique iure est dolore rerum optio, commodi
+        sapiente voluptate vero fugiat voluptates asperiores? Soluta nesciunt
+        sit accusamus quos quod temporibus, harum adipisci expcabo sequi amet
+        nisi tenetur rem animi dolor voluptatem sed, debitis ipsum! Aquid
+        dolorem ipsam saepe nemo rem, laudantium odit, optio fuga atque,
+        veritatis sequi ipsa. Quis corrupti placeat praesentium pariatur veniam?
+        Esse commodi, quod, repellat animi minima accusantium, officia amet
+        cupiditate dolores doloribus voluptas nemo neque deserunt quia. Aquid
+        sapiente harum ducimus amet unde vero magni expcabo obcaecati!
+        Consequuntur facis quod voluptatem bero moltia sunt doloremque nulla
+        fugit voluptate laborum odit, aquam sed a iusto vero ducimus nihil quia.
+        Quos ratione accusamus debitis ullam, pariatur enim sed saepe repellat!
+        Esse delectus officia cupiditate. Autem optio cumque assumenda quod
+        neque officiis vitae expedita at molestias accusamus, quis debitis in
+        aquid provident nulla blanditiis error itaque laborum accusantium
+        tenetur ipsa amet. Quia fugiat quaerat minima quam nostrum, voluptatem
+        rerum a quo ab sequi odio, sint tempora? Impedit quaerat, minus incidunt
+        porro eaque, odit voluptatum natus aas vero ipsa provident pariatur
+        excepturi! Architecto esse sed soluta, fugit atque simique est. Suscipit
+        doloribus vitae molestiae saepe ullam pariatur voluptates labore facis
+        ipsam perspiciatis inventore ratione, hic dolores distinctio! Excepturi
+        quasi ratione dolorem consequatur voluptatibus maxime atque earum magnam
+        repellendus eius inventore quidem cum asperiores suscipit expedita sit
+        facere aquam adipisci, veniam illum consectetur quas quae dolores.
+        Magnam ullam praesentium deserunt autem, adipisci vitae incidunt
+        placeat. Expcabo labore debitis adipisci deleniti repellat ratione,
+        soluta bero, vet molestias architecto ad blanditiis fugiat voluptas
+        officia eveniet optio, consectetur totam. Eius iste voluptatibus,
+        doloribus esse quas amet doloremque quidem! Ad nobis impedit, egendi sed
+        illo debitis quia recusandae adipisci voluptatibus minima quibusdam
+        aspernatur dolore ipsum? Vitae, sapiente aquid? Maiores necessitatibus
+        inventore soluta facis, eaque architecto omnis aas perspiciatis rem
+        cumque accusantium, reiciendis repellat optio excepturi beatae dicta quo
+        ut fugiat modi minima at? At recusandae quasi assumenda! Iste obcaecati
+        inventore esse temporibus sunt accusamus optio saepe eveniet. Tempora
+        earum saepe corrupti ratione nostrum impedit! Delectus asperiores
+        tempore dolorum totam quidem assumenda maxime quos esse ea expedita
+        incidunt temporibus et vitae quia eius moltia voluptates, eveniet ipsum
+        fugit rem officia! Corrupti dolorem, deleniti fugiat magnam nostrum eum
+        nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Molestias, recusandae sed soluta obcaecati enim nobis non est eligendi
+        quae voluptatum culpa fugit aperiam voluptas? Accusamus, hic officiis
+        itaque voluptas ex fugit rerum? Fuga nihil veritatis nulla iure optio
+        sit dignissimos voluptates? Nihil non assumenda expedita aliquam at,
+        aliquid eius repellat consequatur deleniti officiis laborum eveniet iste
+        tempora, quisquam consectetur, reiciendis quidem? Nostrum libero
+        suscipit, modi ullam impedit a molestiae saepe? Culpa quaerat, animi
+        odio quis dignissimos sed nesciunt eveniet fugit in vitae reiciendis
+        eius minima. Ex delectus consequatur ipsum, libero eos labore fugiat,
+        error quisquam, sequi aliquid quod autem id possimus modi iure! Quam
+        error sit numquam ipsum inventore nulla suscipit, architecto ea nihil
+        tempora vero modi libero expedita sed aperiam alias quisquam est eum
+        dolorum! Consectetur autem asperiores, aspernatur porro velit quas!
+        Molestiae consequuntur magnam harum nesciunt fugiat sunt dolore sit
+        blanditiis. Earum nisi pariatur id provident quod repellat magnam
+        reprehenderit, quos corrupti modi dicta, mollitia eius amet
+        voluptatibus, ducimus nemo vero voluptatum exercitationem delectus sit
+        nihil. Quidem, nobis corrupti pariatur alias provident quod. Quas animi
+        obcaecati commodi ullam, iste eaque iure ducimus unde hic quaerat
+        deleniti nemo consequuntur eveniet! Ex similique voluptatibus sit
+        delectus libero ullam reprehenderit, odit officiis harum ea repellendus
+        deleniti impedit amet quo. Sint, nemo? Sed reprehenderit, nostrum
+        mollitia totam eveniet reiciendis aliquam cum at modi ea ut voluptas
+        nesciunt provident sapiente necessitatibus vitae repudiandae voluptate
+        dolore officiis cupiditate, officia obcaecati dolor illum vero? Mollitia
+        incidunt nihil, sequi necessitatibus quasi hic omnis distinctio impedit
+        quibusdam, eligendi sint sed tempora saepe inventore quos. Perferendis
+        et, rem dolores neque quo obcaecati sapiente, facere placeat libero,
+        quasi eveniet! Libero, officiis ipsum? Consequuntur itaque voluptatum
+        eius quidem earum, voluptate eum consectetur, quaerat vero culpa
+        suscipit delectus possimus sint rem magni ratione labore quod
+        praesentium ullam dignissimos numquam dicta reprehenderit voluptas quam.
+        Maiores est labore saepe rem sequi cum, sunt ab, praesentium tenetur
+        inventore animi incidunt dolorem omnis! Accusamus inventore modi facere
+        amet laboriosam nulla porro alias at, eveniet similique sed velit
+        voluptas, quae provident. Dolore explicabo ipsam quaerat, optio id quasi
+        cum odit vel libero quia temporibus, dolores illum soluta recusandae
+        nostrum. Explicabo voluptates nihil quaerat sit voluptatum odit cum
+        assumenda nemo expedita? Quia, quisquam dignissimos. Cupiditate,
+        laborum. Rerum quisquam sint voluptatum! Deleniti, deserunt, quidem
+        provident est laboriosam laudantium eos consequatur enim exercitationem
+        aliquid porro eligendi neque, vitae voluptas laborum eius eum quasi
+        pariatur! Explicabo nihil sunt quis doloremque consequuntur eos ipsam a
+        nam quas et perspiciatis placeat omnis tenetur exercitationem modi
+        nesciunt officiis quidem similique eaque beatae, rerum, quasi ab aperiam
+        ipsa. Ut esse iste cupiditate voluptatibus beatae, natus eos fugit iure.
+        Harum dicta et similique nihil accusantium mollitia magni quaerat ad,
+        corrupti, repellendus adipisci nostrum eaque autem minima, earum quam
+        nobis inventore debitis repellat dolores tempore modi. Dolor, minima
+        rem. Corporis repudiandae cumque dolorum odio recusandae laborum et,
+        beatae dolore deserunt nesciunt. Eum cum rem in quasi? Adipisci quod,
+        cum, sequi asperiores ea aliquam laboriosam quam nesciunt dolor
+        consectetur corrupti perspiciatis ipsam nostrum labore facilis earum.
+        Perspiciatis?
+      </p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sideNev = document.querySelector(".side-nav");
+        const btnNav = document.querySelector("#btnNav");
+        const overlayScreen = document.querySelector(".nav-overlay");
+      });
+      btnNav.addEventListener("click", () => {
+        sideNev.classList.add("open");
+      });
+    </script>
+  </body>
+</html>

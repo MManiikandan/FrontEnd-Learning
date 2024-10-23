@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tabel {
+        border: 1px;
+        width: 600px;
+      }
+      .tabelhead th {
+        background-color: gray;
+      
+        padding: 10px;
+        color: rgb(1, 1, 15);
+      }
+      .tabelbody tr {
+        background-color: black;
+        width: 600px;
+        border: 1px black solid;
+        padding: 10px;
+        color: rgb(1, 1, 15);
+      }
+      table tr:nth-of-type(even){
+        background-color:rgb(124, 14, 14);
+      
+         border: 1px black solid;
+      }
+      *{
+        background-color: lightgray ;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="tabel">
+      <caption>
+        User Details
+      </caption>
+      <thead class="tabelhead">
+        <tr>
+          <th>NAME</th>
+          <th>AGE</th>
+          <th>CITY</th>
+        </tr>
+      </thead>
+      <tbody class="tabelbody">
+        <tr>
+          <td>Sivalingam</td>
+          <td>18</td>
+          <td>Chennai</td>
+        </tr>
+        <tr>
+          <td>Marees</td>
+          <td>19</td>
+          <td>Madurai</td>
+        </tr>
+        <tr>
+          <td>Praksh</td>
+          <td>20</td>
+          <td>Tenkasi</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

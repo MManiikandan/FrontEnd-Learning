@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tabel {
+        margin: 100px;
+        display: table;
+        width: 80%;
+        border: solid black;
+      }
+      .row {
+        display: table-row;
+      }
+      .col {
+        border: 1px solid black;
+        padding: 10px;
+        display: table-cell;
+      }
+      .Header {
+        display: table-header-group;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        font-size: 30px;
+        font-weight: solid 700;
+      }
+      .caption {
+        display: table-caption;
+        text-align: center;
+        font-size: large;
+        font-weight: bolder;
+        color: red;
+        padding: 10px;
+      }
+      .footer {
+        display: table-footer-group;
+  
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tabel">
+      <div class="caption">Student Table</div>
+      <div class="Header">
+        <div class="row">
+          <div class="col">Name</div>
+          <div class="col">Age</div>
+          <div class="col">City</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">Marees</div>
+        <div class="col">20</div>
+        <div class="col">DDD</div>
+      </div>
+      <div class="row">
+        <div class="col">Sivalingam</div>
+        <div class="col">20</div>
+        <div class="col">CCC</div>
+      </div>
+      <div class="row">
+        <div class="col">Mathesh</div>
+        <div class="col">21</div>
+        <div class="col">BBB</div>
+      </div>
+      <div class="row">
+        <div class="col">Prakash</div>
+        <div class="col">21</div>
+        <div class="col">AAA</div>
+      </div>
+      <div class="footer">
+        <div class="col">number of students</div>
+      </div>
+    </div>
+  </body>
+</html>

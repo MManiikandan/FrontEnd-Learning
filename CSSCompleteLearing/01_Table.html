@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgb(184, 222, 235);
+      }
+      table {
+        border: black solid;
+        background-color: gray;
+        width: 70%;
+        border-collapse: collapse;
+      }
+      table tbody tr:nth-of-type(odd) {
+        background-color: rgb(236, 215, 190);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <table cellpadding="20px;" cellspacing="4px">
+        <caption>
+          <b>Student Details</b>
+        </caption>
+        <thead>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Age</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Marees</td>
+            <td>CSE</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Abdhul</td>
+            <td>ECE</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>Mathesh</td>
+            <td>EEE</td>
+            <td rowspan="2">20</td>
+          </tr>
+          <tr>
+            <td>Prakash</td>
+            <td>CSE</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Number of students</td>
+            <td>4</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
