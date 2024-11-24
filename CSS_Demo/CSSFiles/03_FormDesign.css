@@ -7,7 +7,7 @@
   font-family: "Poppins";
 }
 body {
-  background-color: #a7bcb9;
+  background-color: #a7bcb8;
 }
 .main-wrapper {
   display: flex;
@@ -64,7 +64,6 @@ body {
   transition: 0.5s;
   resize: none;
 }
-
 
 .form-input:focus {
   border-color: #24527a;
